@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>steps</title>
+    <style>
+        .steps{
+            list-style-type: none; 
+            font-size: 40px;
+            color: white;
+        }
+        .steps__item{
+            float: left;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border: 5px solid lightgray;
+            border-radius: 50%;
+            background-color: lightgray;
+            padding: 10px;
+            margin: 20px;
+        }
+        .steps__item_visited{
+            background-color: #7FFF00;  
+        }
+        .steps__item_active{
+            background-color: purple;  
+        }
+        .steps__item_unvisited{
+            background-color: lightgray;  
+        }
+        .steps__item::after{
+            float: left;
+            content: "";
+            width: 40px;
+            height: 5px;
+            background-color: lightgray;
+            display: block;
+            margin: -25px 0px 0px 65px;
+        }
+        .steps__item:last-child::after{
+            float: left;
+            content: "";
+            width: 0px;
+            height: 0px;
+        }
+    </style>
+    <body>
+        <ul class="steps">
+            <li class="steps__item steps__item_visited">1</li>
+            <li class="steps__item steps__item_visited">2</li>
+            <li class="steps__item steps__item_visited">3</li>
+            <li class="steps__item steps__item_active">4</li>
+            <li class="steps__item steps__item_unvisited">5</li>
+        </ul>
+    </body>
+</head>

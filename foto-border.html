@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>foto-border</title>
+    <style>
+        
+        .border{
+           position: relative;
+            width: 390px;
+            height: 190px;
+        }
+            img{
+            position: absolute;
+            background-color: lightgreen;
+            border: solid lightgreen 10px;
+            z-index: 30;
+        }
+        .border::before{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 400px;
+            height: 200px;
+            background-color: green;
+            display: inline-block;
+            z-index: 2;
+        }
+        .border::after{
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 400px;
+            height: 200px;
+            background-color: darkgreen;
+            display: inline-block;
+            z-index: 1;
+        }
+        
+
+    </style>
+    <body>
+        <div class="border">
+            <img src="http://placehold.it/380x180" alt="example image">
+        </div>
+    </body>
+</head>

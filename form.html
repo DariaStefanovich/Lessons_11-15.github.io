@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title><form action=""></form></title>
+ <style>
+     html {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0 100px 20px;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    .button{
+        padding-left: 150px;
+        border-top: solid 0.5px;
+    }
+ </style>
+  </head>
+<body>
+  <div class="container"> 
+    <form>
+      <fieldset>
+        <legend>Анкета нового пользователя</legend>
+        <div>
+            <label for="text">Имя:</label>
+              <input id="text" name="text" type="text">
+          </div>
+
+          <div>
+            <label for="text" >Фамилия:</label>
+              <input id="text" name="text" type="text">
+          </div>
+          <div>
+          <label>Укажите пол:</label>
+              <input type="radio" name="Radios" id="radio" value="value-1" >
+              <label for="radio">
+                мужской
+              </label>
+              <input  type="radio" name="Radios" id="radio2" value="value-2">
+              <label for="radio2">
+                женский
+              </label>
+        </div>
+        <div>
+            <label for="select" >Страна проживания:</label>
+            <select>
+                <option>Беларусь</option>
+                <option>Украина</option>
+                <option>Польша</option>
+                <option>Венгрия</option>
+                <option>Грузия</option>
+                <option>Испания</option>
+            </select>
+        </div>
+
+    <div>
+        <label>Владение языками:</label>
+                <input type="checkbox" name="Checkboxes" id="Checkbox1" value="value-1">
+                <label for="Checkbox1">
+                  русский
+                </label>
+                    <input type="checkbox" name="Checkboxes" id="Checkbox2" value="value-1">
+                    <label for="Checkbox2">
+                        белорусский
+                    </label>
+                    <input type="checkbox" name="Checkboxes" id="Checkbox3" value="value-1">
+                    <label for="Checkbox3">
+                        английский
+                    </label>
+    </div>
+
+    <div>
+        <label for="eFormControlFile" >Фото профиля:</label>
+          <input type="file" id="FormControlFile">
+      </div>
+
+      <div>
+        <label for="text" >Ведите логин:</label>
+          <input id="text" name="text" type="text">
+      </div>
+
+      <div>
+        <label for="login1">Введите email:</label>
+          <input id="login1" name="login" type="email">
+      </div>
+
+      <div>
+        <label for="password">Введите пароль:</label>
+          <input id="password" name="password" type="password">
+      </div>
+
+      <div>
+        <label for="password">Повторите пароль:</label>
+          <input id="password" name="password" type="password">
+      </div>
+      <div>
+        <div class="button">
+          <button id="button1id" name="button1id" disabled>Отправить</button>
+          <button id="button2id" name="button2id">Отменить</button>
+        </div>
+      </div>
+    </fieldset>
+    </form>
+  </div>
+</body>
+</html>
