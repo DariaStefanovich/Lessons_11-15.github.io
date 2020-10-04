@@ -40,6 +40,10 @@
              padding: 5px 32px;
             background: url(images/man.png) no-repeat left;
         }
+        .name:focus{
+            outline: none;
+            border: solid 2px rgb(115, 154, 255);
+        }
         .email{
              padding: 5px 32px;
             background: url(images/let.png) no-repeat left;
@@ -52,17 +56,26 @@
              padding: 5px 32px;
             background: url(images/phone.png) no-repeat left;
         }
+        .phone:focus{
+            outline: none;
+            border: solid 2px rgb(115, 154, 255);
+        }
         .message{
             resize: vertical; 
-            width: 90%; 
-            min-height: 60px; 
+            width: 85%; 
+            min-height: 80px; 
             max-height: 200px; 
             border-radius: 5px;
              padding: 5px 32px;
              background-position: 0px 0px;
             background: url(images/pen.png) no-repeat left top;
         }
+        .message:focus{
+            outline: none;
+            border: solid 2px rgb(115, 154, 255);
+        }
     .container{
+        width: 550px;
         border: solid rgb(115, 154, 255);
         border-radius: 10px;
         background-color: white;
@@ -100,16 +113,22 @@
         border-radius: 5px;
         border: solid rgb(115, 154, 255);
     }
-    /*Класс-модификатор */
-    .position2 .col{
+    .col{
         display: inline-block;
+    }
+    /*Класс-модификатор position2 */
+    .position2 .col{
+        display: block;
+    }
+    .position2 input{
+        width: 85%; 
     }
  </style>
   </head>
 <body>
   <div class="container"> 
     <figcaption> <img src="images/4200780-32.png" alt="bg">Обратная связь</figcaption>
-    <!--Класс-модификатор-->
+    <!--Класс-модификатор position2-->
     <form class="position2">
         <div class="row">
             <label for="text" >Имя:</label>
