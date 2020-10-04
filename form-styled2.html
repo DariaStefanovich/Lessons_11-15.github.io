@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title><form action=""></form></title>
+ <style>
+     body{
+         background-color: gray;
+     }
+     html {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0 100px 20px;
+      font-size: 20px;
+      line-height: 40px;
+      font-family: "Open Sans", sans-serif;
+    }
+    .button{
+        padding-left: 150px;
+        border-top: solid 0.5px;
+    }
+    input{
+        display: inline-block;
+        width: 250px;
+        height: 30px;
+        border: solid 2px gray;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    label{
+        display: inline-block;
+        width: 100px;
+        font-size: 15px;
+        font-weight: bold;
+        color: gray;
+    }
+         .name{
+             padding: 5px 32px;
+            background: url(images/man.png) no-repeat left;
+        }
+        .name:focus{
+            outline: none;
+            border: solid 2px rgb(115, 154, 255);
+        }
+        .email{
+             padding: 5px 32px;
+            background: url(images/let.png) no-repeat left;
+        }
+        .email:focus{
+            outline: none;
+            border: solid 2px rgb(115, 154, 255);
+        }
+        .phone{
+             padding: 5px 32px;
+            background: url(images/phone.png) no-repeat left;
+        }
+        .phone:focus{
+            outline: none;
+            border: solid 2px rgb(115, 154, 255);
+        }
+        .message{
+            resize: vertical; 
+            width: 85%; 
+            min-height: 80px; 
+            max-height: 200px; 
+            border-radius: 5px;
+             padding: 5px 32px;
+             background-position: 0px 0px;
+            background: url(images/pen.png) no-repeat left top;
+        }
+        .message:focus{
+            outline: none;
+            border: solid 2px rgb(115, 154, 255);
+        }
+    .container{
+        width: 550px;
+        border: solid rgb(115, 154, 255);
+        border-radius: 10px;
+        background-color: white;
+    }
+    figcaption{
+        width: 100%;
+        color: white;
+        background-color: rgb(115, 154, 255);
+        margin: 0px;
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 25px;
+    }
+    img{
+        padding-right: 5px;
+        width: 24px;
+        height: 24px;
+    }
+         .home:before {
+             background-position: -62px -10px;
+         }
+
+    form{
+        padding: 10px 30px;
+    }
+    .button{
+        border: white;
+    }
+    button{
+        display: inline-block;
+        background-color: rgb(115, 154, 255);
+        color: white;
+        width: 200px;
+        height: 35px;
+        border-radius: 5px;
+        border: solid rgb(115, 154, 255);
+    }
+    .col{
+        display: inline-block;
+    }
+    /*Класс-модификатор position2 */
+    .position2 .col{
+        display: block;
+    }
+    .position2 input{
+        width: 85%; 
+    }
+ </style>
+  </head>
+<body>
+  <div class="container"> 
+    <figcaption> <img src="images/4200780-32.png" alt="bg">Обратная связь</figcaption>
+    <!--Класс-модификатор position2-->
+    <form >
+        <div class="row">
+            <label for="text" >Имя:</label>
+            <div class="col">
+              <input id="text" name="text" type="text" placeholder="Введите Ваше Имя" class="name">
+            </div>
+          </div>
+
+        <div class="row">
+            <label for="login1" >Email:</label>
+            <div class="col">
+                <input id="login1" name="login" type="email" placeholder="Введите адрес Вашей электронной почты" class="email">
+            </div>
+        </div>
+
+        <div class="row">
+            <label for="tel" >Телефон:</label>
+            <div class="col">
+            <input id="tel" name="tel1" type="tel" pattern="8[0-9]{10}" placeholder="Введите номер телефона" class="phone">
+            </div>
+        </div>
+
+        <div>
+            <label for="textarea" >Сообщение:</label>
+                <textarea class="message" placeholder="Текст сообщения" id="textarea" name="textarea" cols="40" rows="3"></textarea>
+            </div>
+
+        <div>
+            <div class="button">
+                <button id="button1id" name="button1id">Отправить</button>
+            </div>
+        </div>
+        
+    </form>
+  </div>
+</body>
+</html>
